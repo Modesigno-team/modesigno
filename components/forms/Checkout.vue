@@ -589,8 +589,8 @@ import {
 } from "@heroicons/vue/20/solid";
 import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
 
-import { faPaypal } from '@fortawesome/free-brands-svg-icons' 
-import { faCreditCard, faCoins } from '@fortawesome/free-solid-svg-icons'
+import { faPaypal } from "@fortawesome/free-brands-svg-icons";
+import { faCreditCard, faCoins } from "@fortawesome/free-solid-svg-icons";
 
 import { library } from "@fortawesome/fontawesome-svg-core";
 

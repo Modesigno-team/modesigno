@@ -1,5 +1,3 @@
-<script setup lang="ts">
-</script>
 <template>
   <nav class="z-10 bg-gray-100 w-full fixed top-0">
     <div class="mx-auto max-w-8xl px-2 sm:px-12 lg:px-24">
@@ -38,8 +36,6 @@
     </div>
   </nav>
 </template>
-
-
 <style scoped></style>
 <script setup>
 import { MagnifyingGlassIcon, ShoppingCartIcon } from '@heroicons/vue/24/solid'
