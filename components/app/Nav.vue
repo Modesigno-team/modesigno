@@ -3,18 +3,18 @@
     <div class="mx-auto max-w-8xl px-2 sm:px-12 lg:px-24">
       <div class="relative flex h-16 items-center justify-between">
         <div class="w-56">
-          <h3 class="font-poppins text-xl text-gray-700">Shop</h3>
+          <NuxtLink to="/products" class="font-poppins text-xl text-gray-700">Shop</NuxtLink>
         </div>
-        <div class="basis-2/4 flex justify-center">
+        <NuxtLink to="/" class="basis-2/4 flex justify-center">
           <img
             src="/images/modesigno-web.svg"
             alt="Modesigno"
             width="150"
             height="50"
           />
-        </div>
+        </NuxtLink>
         <div class="flex justify-between items-center pr-2 sm:pr-0 w-56">
-          <NuxtLink to="/account/login"
+          <NuxtLink to="/auth/login"
             class="border border-black text-gray-700 rounded-sm px-4 py-2"
           >
             Login

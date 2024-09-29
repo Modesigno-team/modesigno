@@ -7,7 +7,7 @@
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <h1 class="sr-only">Checkout</h1>
         <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
-            <FormsCheckout />
+            <AppFormsCheckout />
         <!-- Order summary -->
         <div class="mt-10 lg:mt-0">
           <h2 class="text-lg font-medium text-gray-900">Order summary</h2>

@@ -43,7 +43,7 @@
                       <select
                         :id="`quantity-${product.id}`"
                         :name="`quantity-${product.name}`"
-                        class="block max-w-full rounded-md border border-gray-300 py-3 px-2.5 text-left text-base font-medium leading-5 text-gray-700 shadow-sm focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 sm:text-sm"
+                        class="block max-w-full rounded-md border border-gray-300 py-3 px-5 text-left text-base font-medium leading-5 text-gray-700 shadow-sm focus:border-yellow-500 focus:outline-none focus:ring-1 focus:ring-yellow-500 sm:text-sm"
                       >
                         <option value="1">1</option>
                         <option value="2">2</option>

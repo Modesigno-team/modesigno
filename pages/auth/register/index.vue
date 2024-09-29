@@ -79,7 +79,7 @@ import { EnvelopeIcon, LockClosedIcon } from "@heroicons/vue/24/outline";
           <p class="font-light">
             Already a member?
             <NuxtLink
-              to="/account/login"
+              to="/auth/login"
               class="font-semibold text-yellow-600 hover:text-yellow-500"
               >Sign in</NuxtLink
             >
@@ -96,5 +96,6 @@ import { EnvelopeIcon, LockClosedIcon } from "@heroicons/vue/24/outline";
         </div>
       </form>
     </div>
+    <SharedLogo />
   </div>
 </template>

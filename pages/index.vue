@@ -3,12 +3,12 @@
 
 <template>
     <div>
-        <Banner />
-        <PagesInfoDetail />
+        <AppBanner />
+        <AppHomeInfoDetail />
         <div class="py-16 sm:py-24">
-            <CommonProductList title="New arrivals" />
+            <ProductList title="New arrivals" />
         </div>
-        <PagesCollections />
+        <AppHomeCollections />
         <AppFooter />
     </div>
 </template>

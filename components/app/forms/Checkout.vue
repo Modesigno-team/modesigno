@@ -211,19 +211,7 @@
           </div>
         </div>
 
-        <div class="sm:col-span-2">
-          <label for="company" class="block text-sm font-medium text-gray-700"
-            >Company (optional)</label
-          >
-          <div class="mt-1">
-            <input
-              type="text"
-              name="company"
-              id="company"
-              class="block w-full rounded-md border-gray-300 shadow-sm focus:border-yellow-500 focus:ring-yellow-500 sm:text-sm"
-            />
-          </div>
-        </div>
+        
 
         <div class="sm:col-span-2">
           <label for="address" class="block text-sm font-medium text-gray-700"

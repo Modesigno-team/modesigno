@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <ProductListBanner />
+    <div class="mt-10">
+        <ProductBanner />
         <main class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
 
             <div class="pt-12 lg:grid lg:grid-cols-3 lg:gap-x-8 xl:grid-cols-4">
@@ -28,8 +28,8 @@
                   </form>
                 </div>
               </aside>
-              <div class="mt-6 lg:col-span-2 lg:mt-0 xl:col-span-3">
-                <CommonProductList title="Search results." subtitle="Three (3) items matched your search."/>
+              <div class="lg:col-span-2 lg:mt-0 xl:col-span-3">
+                <ProductList title="Search results." subtitle="Three (3) items matched your search."/>
               </div>
             </div>
           </main>

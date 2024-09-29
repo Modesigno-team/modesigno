@@ -7,7 +7,7 @@ import { EnvelopeIcon, LockClosedIcon } from "@heroicons/vue/24/outline";
   >
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <h3
-        class="mt-10 text-center text-4xl leading-9 tracking-tight text-gray-900"
+        class="mt-10 text-center text-4xl leading-9 tracking-tight text-gray-600"
       >
         Login
       </h3>
@@ -52,7 +52,7 @@ import { EnvelopeIcon, LockClosedIcon } from "@heroicons/vue/24/outline";
           <p class="font-light">
             Don't have an account?
             <NuxtLink
-              to="/account/register"
+              to="/auth/register"
               class="font-semibold text-yellow-600 hover:text-yellow-500"
               >Sign up now?</NuxtLink
             >
@@ -76,5 +76,6 @@ import { EnvelopeIcon, LockClosedIcon } from "@heroicons/vue/24/outline";
         </div>
       </form>
     </div>
+    <SharedLogo />
   </div>
 </template>
