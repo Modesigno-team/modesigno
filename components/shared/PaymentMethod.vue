@@ -156,12 +156,13 @@
 import { ref, reactive } from "vue";
 import { RadioGroup, RadioGroupOption } from "@headlessui/vue";
 import { CheckCircleIcon, PlusIcon } from "@heroicons/vue/20/solid";
-import { FontAwesomeIcon } from "@fortawesome/vue-fontawesome";
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { faCoins, faCreditCard } from '@fortawesome/free-solid-svg-icons';
+import { faPaypal } from '@fortawesome/free-brands-svg-icons';
 
-import { faPaypal, faCreditCard, faCoins } from "@fortawesome/free-solid-svg-icons";
-import { library } from "@fortawesome/fontawesome-svg-core";
+library.add(faCoins, faCreditCard, faPaypal);
 
-library.add(faPaypal, faCreditCard, faCoins);
 
 const methods = [
   { id: 1, name: "ikudayisi oluwatosin", cardNo: "4560", icon: ["fas", "credit-card"], expireAt: "09/25", isActive: false },
