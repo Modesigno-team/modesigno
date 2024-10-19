@@ -116,7 +116,7 @@
                       type="text"
                       name="coupon"
                       id="coupon"
-                      class="block w-full rounded-none rounded-l-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6"
+                      class="block w-full rounded-none rounded-l-md border-0 py-2 pl-2 sm:py-1.5 sm:pl-5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6"
                       placeholder="Enter promo code"
                     />
                   </div>
@@ -131,7 +131,7 @@
             </div>
             <div class="mt-5 sm:mt-3 flex items-center gap-x-6 w-full">
               <NuxtLink to="/checkout"
-                class="w-full flex justify-center border border-black text-gray-700 px-2 py-2 rounded-md text-small sm:px-4 sm:py-2 sm:text-lg"
+                class="w-full flex justify-between border border-black text-gray-700 px-2 py-2 rounded-md text-small sm:px-4 sm:py-2 sm:text-lg"
               >
                 <span>Proceed to checkout</span>
                 <span
