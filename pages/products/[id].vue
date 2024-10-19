@@ -2,7 +2,7 @@
   <div class="bg-white">
     <AppNav> </AppNav>
     <div
-      class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+      class="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:max-w-7xl lg:px-8"
     >
       <div class="lg:grid lg:grid-cols-2 lg:items-start lg:gap-x-8">
         <TabGroup as="div" class="flex flex-col-reverse">
@@ -393,25 +393,25 @@ const product = {
     {
       id: 1,
       name: "Angled view",
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+      src: "https://tailwindui.com/plus/img/ecommerce-images/product-page-03-product-01.jpg",
       alt: "Angled front view with bag zipped and handles upright.",
     },
     {
       id: 2,
       name: "Angled view",
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+      src: "https://tailwindui.com/plus/img/ecommerce-images/product-page-03-product-01.jpg",
       alt: "Angled front view with bag zipped and handles upright.",
     },
     {
       id: 3,
       name: "Angled view",
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+      src: "https://tailwindui.com/plus/img/ecommerce-images/product-page-03-product-01.jpg",
       alt: "Angled front view with bag zipped and handles upright.",
     },
     {
       id: 4,
       name: "Angled view",
-      src: "https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg",
+      src: "https://tailwindui.com/plus/img/ecommerce-images/product-page-03-product-01.jpg",
       alt: "Angled front view with bag zipped and handles upright.",
     },
   ],

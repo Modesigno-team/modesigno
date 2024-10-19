@@ -15,13 +15,14 @@
                 <select
                   id="tabs"
                   name="tabs"
+                  v-model="selectedTab"
                   class="block w-full rounded-md border-none bg-white/5 py-2 pl-3 pr-10 text-base text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-yellow-500 sm:text-sm"
                 >
                   <option
                     v-for="tab in tabs"
                     :key="tab.tag"
                     :selected="selectedTab === tab.tag"
-                    @click="changeTab(tab.tag)"
+                    :value="tab.tag"
                   >
                     {{ tab.name }}
                   </option>
@@ -69,6 +70,10 @@
 <script setup>
 import { ref } from "vue";
 
+const route = useRoute()
+
+const currentTab = route.query.tab ? route.query.tab : 'change-password';
+
 const tabs = [
   { name: "change password", tag: "change-password", href: "#" },
   { name: "addresses", tag: "addresses", href: "#" },
@@ -76,7 +81,7 @@ const tabs = [
   { name: "privacy", tag: "privacy", href: "#" },
 ];
 
-const selectedTab = ref('change-password');
+const selectedTab = ref(currentTab);
 
 const changeTab = (tab) => selectedTab.value = tab;
 </script>

@@ -8,7 +8,7 @@
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <h2 class="text-gray-800 text-2xl">My Orders</h2>
             <small class="text-xs">Manage all orders.</small>
-            <div class="max-w-7xl px-4 py-16 sm:px-1 lg:px-1 w-2/3">
+            <div class="max-w-7xl px-4 py-8 sm:px-1 lg:px-1 w-2/3">
               <div class="sm:hidden">
                 <label for="tabs" class="sr-only">Select a tab</label>
                 <select
@@ -45,7 +45,8 @@
                   </ul>
                 </nav>
               </div>
-              <div
+              <template v-if="tabOrders.length > 0">
+                <div
                 v-for="order in tabOrders"
                 :key="order.orderId"
                 class="bg-white shadow-sm sm:rounded-lg sm:border mb-5 p-2 lg:p-2"
@@ -102,6 +103,9 @@
                   </div>
                 </div>
               </div>
+              </template>
+              
+              <SharedEmptyTab :title="`No ${selectedTab} order found.`" v-else/>
             </div>
           </div>
         </main>
@@ -118,7 +122,11 @@ import {
   PrinterIcon,
 } from "@heroicons/vue/24/outline";
 
-const selectedTab = ref('delivered');
+const route = useRoute()
+
+const currentTab = route.query.tab ? route.query.tab : 'delivered';
+
+const selectedTab = ref(currentTab);
 
 const tabOrders = computed(() => {
   return orders.filter(order => order.status === selectedTab.value);
@@ -144,7 +152,7 @@ const orders = [
     currency: "$",
     price: "150.00",
     items: "3",
-    status: "In-progress",
+    status: "returns",
     createdDate: "30th September, 2020",
   },
   {
@@ -164,7 +172,7 @@ const orders = [
     currency: "$",
     price: "120.00",
     items: "2",
-    status: "returns",
+    status: "shipped",
     createdDate: "2nd October, 2020",
   },
   {
@@ -204,7 +212,7 @@ const orders = [
     currency: "$",
     price: "300.00",
     items: "4",
-    status: "In-progress",
+    status: "returns",
     createdDate: "6th October, 2020",
   },
   {
@@ -224,7 +232,7 @@ const orders = [
     currency: "$",
     price: "250.00",
     items: "3",
-    status: "returns",
+    status: "shipped",
     createdDate: "8th October, 2020",
   },
   {
@@ -244,7 +252,7 @@ const orders = [
     currency: "$",
     price: "40.00",
     items: "12",
-    status: "in-progress",
+    status: "returns",
     createdDate: "10th October, 2020",
   },
   {

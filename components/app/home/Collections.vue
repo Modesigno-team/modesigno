@@ -4,14 +4,14 @@
 <template>
     <div class="min-h-screen px-6 pt-10 sm:pt-12 pb-24 sm:pb-24 sm:px-24 lg:flex sm:justify-between lg:gap-x-10 lg:px-24 lg:py-10">
       <div class="mx-auto max-w-2xl lg:mx-0 lg:flex-auto">
-        <h1 class="font-poppins mt-10 max-w-lg text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+        <h1 class="font-poppins sm:mt-10 max-w-lg text-6xl font-bold tracking-tight text-gray-900 sm:text-6xl">
           Choose from our creative collection
         </h1>
-        <p class="mt-6 text-lg leading-8 text-gray-600">
+        <p class="mt-5 sm:mt-3 text-2xl sm:text-lg leading-8 text-gray-600">
           We have varieties of designs, we give you the best of the best.
         </p>
-        <div class="mt-10 flex items-center gap-x-6">
-          <button class="border border-black text-gray-700 rounded-full px-4 py-2 text-lg">
+        <div class="mt-5 sm:mt-3 flex items-center gap-x-6">
+          <button class="border border-black text-gray-700 px-5 py-5 rounded-md text-2xl sm:px-4 sm:py-2 sm:text-lg">
             Visit our collection
           </button>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900 flex items-center">
@@ -19,7 +19,7 @@
           </a>
         </div>
       </div>
-      <div class="grid grid-cols-2 gap-x-16 mt-10 lg:mt-0">
+      <div class="grid grid-cols-2 gap-y-8 gap-x-8 sm:gap-x-16 mt-10 lg:mt-0">
         <div class="relative pb-4 bg-gray-50 rounded-3xl shadow-lg w-44 h-48">
           <div class="bg-card-header absolute -top-1 flex justify-center items-center w-44 min-h-36 rounded-t-3xl px-6">
             <span class="w-56 inline-flex justify-center items-center rounded-full bg-blue-200 px-2 py-2 text-xs font-medium text-white ring-1 ring-inset ring-blue-700/10">

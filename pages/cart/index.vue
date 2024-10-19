@@ -1,11 +1,13 @@
 <template>
   <div class="bg-white">
     <AppNav> </AppNav>
-    <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
+    <div
+      class="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:max-w-7xl lg:px-8"
+    >
       <h1 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
         Cart
       </h1>
-      <small class="text-xs">You have four (4) items in your cart.</small>
+      <small class="text-xs">You have two (2) items in your cart.</small>
 
       <form class="mt-12">
         <section aria-labelledby="cart-heading">
@@ -28,10 +30,10 @@
                 <div>
                   <div class="flex justify-between">
                     <h4 class="text-sm">
-                      <a
-                        :href="product.href"
+                      <NuxtLink
+                        :to="product.href"
                         class="font-medium text-gray-700 hover:text-gray-800"
-                        >{{ product.name }}</a
+                        >{{ product.name }}</NuxtLink
                       >
                     </h4>
                     <div
@@ -82,13 +84,13 @@
           <h2 id="summary-heading" class="sr-only">Order summary</h2>
           <div class="text-center text-sm">
             <p>
-              <a
-                href="#"
+              <NuxtLink
+                to="/products"
                 class="font-medium text-yellow-500 hover:text-yellow-600"
               >
                 <span aria-hidden="true"> &larr;</span>
                 Continue Shopping
-              </a>
+              </NuxtLink>
             </p>
           </div>
           <div>
@@ -127,13 +129,18 @@
                 </div>
               </div>
             </div>
-            <div class="mt-2">
-              <button
-                type="submit"
-                class="w-full rounded-md border border-transparent bg-gray-900 px-4 py-3 text-base font-medium text-white shadow-sm hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-600 focus:ring-offset-2 focus:ring-offset-gray-50"
+            <div class="mt-5 sm:mt-3 flex items-center gap-x-6 w-full">
+              <NuxtLint to="/checkout"
+                class="w-full flex justify-center border border-black text-gray-700 px-2 py-2 rounded-md text-small sm:px-4 sm:py-2 sm:text-lg"
               >
                 Proceed to checkout
-              </button>
+              </NuxtLint>
+              <a
+                href="#"
+                class="text-sm font-semibold leading-6 text-gray-900 flex items-center"
+              >
+                <ChevronRightIcon />
+              </a>
             </div>
           </div>
         </section>
@@ -150,26 +157,26 @@ const products = [
   {
     id: 1,
     name: "Artwork Tee",
-    href: "#",
+    href: "/products/3",
     price: "$32.00",
     color: "Mint",
     size: "M",
     inStock: true,
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/checkout-page-03-product-04.jpg",
+      "https://tailwindui.com/plus/img/ecommerce-images/checkout-page-03-product-04.jpg",
     imageAlt: "Front side of mint cotton t-shirt with wavey lines pattern.",
   },
   {
     id: 2,
     name: "Basic Tee",
-    href: "#",
+    href: "/products/3",
     price: "$32.00",
     color: "Charcoal",
     inStock: false,
     leadTime: "7-8 years",
     size: "L",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/shopping-cart-page-01-product-02.jpg",
+      "https://tailwindui.com/plus/img/ecommerce-images/shopping-cart-page-01-product-02.jpg",
     imageAlt: "Front side of charcoal cotton t-shirt.",
   },
 ];

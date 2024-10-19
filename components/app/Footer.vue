@@ -3,25 +3,30 @@
   <div
     class="bg-footer flex min-h-screen flex-col items-center pt-48 space-y-48 text-white"
   >
-    <div class="flex relative rounded-md overflow-hidden w-1/3">
+    <div
+      class="flex flex-col md:flex-row relative rounded-md overflow-hidden md:w-1/3 w-full"
+    >
       <input
         type="text"
-        class="flex-grow px-4 py-3 rounded-full focus:outline-none"
+        class="flex-grow px-5 py-5 text-xl sm:px-4 sm:py-2 sm:text-lg mx-5 rounded-md sm:mx-0 sm:rounded-full focus:outline-none mb-3 md:mb-0"
         placeholder="Please enter your email address"
       />
       <button
-        class="z-10 px-4 py-3 bg-gray-800 text-white font-bold absolute right-0 rounded-full hover:bg-gray-700 w-48"
+        class=" mx-5 sm:z-10 px-5 py-5 rounded-md text-2xl sm:px-4 sm:py-2 sm:text-lg sm:mx-0 bg-gray-800 text-white font-bold sm:absolute sm:right-0 sm:rounded-full hover:bg-gray-700 sm:w-48"
       >
         Subscribe
       </button>
     </div>
+
     <div class="flex flex-col justify-center items-center space-y-2">
-      <img
-        src="/images/modesigno-web.svg"
-        alt="Modesigno"
-        width="200"
-        height="80"
-      />
+      <NuxtLink to="/">
+        <img
+          src="/images/modesigno-web.svg"
+          alt="Modesigno"
+          width="200"
+          height="80"
+        />
+      </NuxtLink>
       <h2 class="text-lg">creative@modesigno.com</h2>
       <div class="flex justify-between w-12">
         <svg
@@ -55,10 +60,9 @@
   </div>
 </template>
 
-
 <style scoped>
 .bg-footer {
-  background: url('/images/footer-bg.png');
+  background: url("/images/footer-bg.png");
   background-position: center;
   background-size: cover;
 }

@@ -4,22 +4,22 @@
     <div class="mt-16">
       <AuthLayoutSidebar />
       <div class="lg:pl-72">
-        <main class="py-20">
+        <main class="py-10 sm:py-16">
           <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <h2 class="text-gray-800 text-2xl">Coupons & Rewards</h2>
+            <h2 class="text-gray-800 text-xl sm:text-2xl">Coupons & Rewards</h2>
             <small class="text-xs">Access your rewards & earnings here.</small>
 
-            <div class="max-w-7xl px-4 py-8 sm:px-0 lg:px-0 w-2/3">
+            <div class="max-w-7xl px-4 py-6 sm:py-8 sm:px-6 lg:px-0 w-full sm:w-2/3">
               <div class="overflow-hidden rounded-md bg-white shadow-md">
-                <div class="px-4 py-5 sm:p-6 flex justify-between items-start">
-                  <div>
-                    <h1 class="text-gray-800 text-4xl">
+                <div class="px-4 py-5 sm:p-6 flex flex-col sm:flex-row justify-between items-start">
+                  <div class="mb-4 sm:mb-0">
+                    <h1 class="text-gray-800 text-2xl sm:text-4xl">
                       Your virtual balance is:
-                      <span class="text-green-600">5,000</span>
+                      <span class="text-green-600 font-bold">5,000</span>
                     </h1>
-                    <small class="text-xs text-gray-800"
-                      >NGN50.00 in value.</small
-                    >
+                    <small class="text-xs text-gray-800 font-semibold">
+                      NGN50.00 in value.
+                    </small>
                   </div>
                   <span class="self-start">
                     <SharedButton label="Top Up" is-secondary is-rounded />
@@ -27,12 +27,12 @@
                 </div>
               </div>
 
-              <div class="px-4 sm:px-0 lg:px-0">
+              <div class="px-4 sm:px-6 lg:px-0">
                 <div class="sm:flex sm:items-center">
                   <div class="sm:flex-auto">
-                    <p class="mt-16 text-sm text-gray-700">
-                      A list of all the transactions in your account including their
-                      coupons, rewards and purchases.
+                    <p class="mt-10 text-sm text-gray-700">
+                      A list of all the transactions in your account including
+                      coupons, rewards, and purchases.
                     </p>
                   </div>
                 </div>
@@ -46,25 +46,25 @@
                           <tr>
                             <th
                               scope="col"
-                              class="py-3.5 pl-4 pr-3 text-left text-sm font-semibold text-gray-900 sm:pl-0"
+                              class="py-3.5 pl-4 pr-3 text-left text-xs sm:text-sm font-semibold text-gray-900 sm:pl-0"
                             >
                               Type
                             </th>
                             <th
                               scope="col"
-                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                              class="px-3 py-3.5 text-left text-xs sm:text-sm font-semibold text-gray-900"
                             >
                               Amount (currency)
                             </th>
                             <th
                               scope="col"
-                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                              class="px-3 py-3.5 text-left text-xs sm:text-sm font-semibold text-gray-900"
                             >
-                              Value (coin equavalence)
+                              Value (coin equivalence)
                             </th>
                             <th
                               scope="col"
-                              class="px-3 py-3.5 text-left text-sm font-semibold text-gray-900"
+                              class="px-3 py-3.5 text-left text-xs sm:text-sm font-semibold text-gray-900"
                             >
                               Date
                             </th>
@@ -73,22 +73,22 @@
                         <tbody class="divide-y divide-gray-200">
                           <tr v-for="person in people" :key="person.id">
                             <td
-                              class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-0"
+                              class="whitespace-nowrap py-4 pl-4 pr-3 text-xs sm:text-sm font-medium text-gray-900 sm:pl-0"
                             >
                               {{ person.name }}
                             </td>
                             <td
-                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                              class="whitespace-nowrap px-3 py-4 text-xs sm:text-sm text-gray-500"
                             >
                               {{ person.amount }}
                             </td>
                             <td
-                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                              class="whitespace-nowrap px-3 py-4 text-xs sm:text-sm text-gray-500"
                             >
                               {{ person.value }}
                             </td>
                             <td
-                              class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"
+                              class="whitespace-nowrap px-3 py-4 text-xs sm:text-sm text-gray-500"
                             >
                               {{ person.date }}
                             </td>

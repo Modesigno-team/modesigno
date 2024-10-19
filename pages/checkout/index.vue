@@ -2,12 +2,12 @@
   <div class="bg-gray-50">
     <AppNav />
     <main
-      class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8"
+      class="mx-auto max-w-2xl px-4 py-24 sm:px-6 lg:max-w-7xl lg:px-8"
     >
       <div class="mx-auto max-w-2xl lg:max-w-none">
         <h1 class="sr-only">Checkout</h1>
         <div class="lg:grid lg:grid-cols-2 lg:gap-x-12 xl:gap-x-16">
-            <AppFormsCheckout />
+            <CheckoutForm />
         <!-- Order summary -->
         <div class="mt-10 lg:mt-0">
           <h2 class="text-lg font-medium text-gray-900">Order summary</h2>
@@ -34,10 +34,10 @@
                   <div class="flex">
                     <div class="min-w-0 flex-1">
                       <h4 class="text-sm">
-                        <a
-                          :href="product.href"
+                        <NuxtLink
+                          :to="product.href"
                           class="font-medium text-gray-700 hover:text-gray-800"
-                          >{{ product.title }}</a
+                          >{{ product.title }}</NuxtLink
                         >
                       </h4>
                       <p class="mt-1 text-sm text-gray-500">
@@ -148,12 +148,12 @@ const products = [
   {
     id: 1,
     title: "Basic Tee",
-    href: "#",
+    href: "/products/3",
     price: "$32.00",
     color: "Black",
     size: "Large",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/checkout-page-02-product-01.jpg",
+      "https://tailwindui.com/plus/img/ecommerce-images/checkout-page-02-product-01.jpg",
     imageAlt: "Front of men's Basic Tee in black.",
   },
 ];

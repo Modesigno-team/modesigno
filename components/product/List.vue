@@ -31,10 +31,10 @@
             />
           </div>
           <h3 class="mt-4 text-base font-semibold text-gray-900">
-            <a :href="product.href">
+            <NuxtLink :to="product.href">
               <span class="absolute inset-0" />
               {{ product.name }}
-            </a>
+            </NuxtLink>
           </h3>
           <p class="mt-1 text-sm text-gray-500">{{ product.price }}</p>
         </div>
@@ -60,9 +60,9 @@ const products = [
     id: 1,
     name: "Black Basic Tee",
     price: "$32",
-    href: "#",
+    href: "/products/3",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
+      "https://tailwindui.com/plus/img/ecommerce-images/home-page-03-favorite-01.jpg",
     imageAlt: "Model wearing women's black cotton crewneck tee.",
   },
   {
@@ -71,7 +71,7 @@ const products = [
     price: "$32",
     href: "#",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
+      "https://tailwindui.com/plus/img/ecommerce-images/home-page-03-favorite-01.jpg",
     imageAlt: "Model wearing women's black cotton crewneck tee.",
   },
   {
@@ -80,7 +80,7 @@ const products = [
     price: "$32",
     href: "#",
     imageSrc:
-      "https://tailwindui.com/img/ecommerce-images/home-page-03-favorite-01.jpg",
+      "https://tailwindui.com/plus/img/ecommerce-images/home-page-03-favorite-01.jpg",
     imageAlt: "Model wearing women's black cotton crewneck tee.",
   },
 ];
