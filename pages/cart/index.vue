@@ -130,17 +130,16 @@
               </div>
             </div>
             <div class="mt-5 sm:mt-3 flex items-center gap-x-6 w-full">
-              <NuxtLint to="/checkout"
+              <NuxtLink to="/checkout"
                 class="w-full flex justify-center border border-black text-gray-700 px-2 py-2 rounded-md text-small sm:px-4 sm:py-2 sm:text-lg"
               >
-                Proceed to checkout
-              </NuxtLint>
-              <a
-                href="#"
-                class="text-sm font-semibold leading-6 text-gray-900 flex items-center"
+                <span>Proceed to checkout</span>
+                <span
+                class="hidden text-sm font-semibold leading-6 h-8 w-8 text-gray-900 sm:flex items-center"
               >
                 <ChevronRightIcon />
-              </a>
+              </span>
+              </NuxtLink>
             </div>
           </div>
         </section>
@@ -151,7 +150,7 @@
 </template>
 
 <script setup>
-import { CheckIcon, ClockIcon } from "@heroicons/vue/20/solid";
+import { ChevronRightIcon } from "@heroicons/vue/20/solid";
 
 const products = [
   {
