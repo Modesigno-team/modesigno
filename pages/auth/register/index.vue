@@ -16,18 +16,18 @@ import { EnvelopeIcon, LockClosedIcon } from "@heroicons/vue/24/outline";
 
     <div class="sm:mx-auto sm:w-full sm:max-w-sm">
       <form class="space-y-6" action="#" method="POST">
-        <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
+        <div class="grid max-w-2xl grid-cols-1 gap-x-6 gap-y-4 sm:grid-cols-6">
             <div class="sm:col-span-3">
-              <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label>
+              <!-- <label for="first-name" class="block text-sm font-medium leading-6 text-gray-900">First name</label> -->
               <div class="mt-2">
-                <input type="text" id="first-name" class="block w-full rounded-md border-0 py-2.5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6" />
+                <input type="text" id="first-name" class="block w-full rounded-md border-0 py-2.5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6" placeholder="First Name"/>
               </div>
             </div>
 
             <div class="sm:col-span-3">
-              <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label>
+              <!-- <label for="last-name" class="block text-sm font-medium leading-6 text-gray-900">Last name</label> -->
               <div class="mt-2">
-                <input type="text" id="last-name" class="block w-full rounded-md border-0 py-2.5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6" />
+                <input type="text" id="last-name" class="block w-full rounded-md border-0 py-2.5 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-yellow-600 sm:text-sm sm:leading-6" placeholder="Last Name"/>
               </div>
             </div>
         </div>
@@ -96,6 +96,6 @@ import { EnvelopeIcon, LockClosedIcon } from "@heroicons/vue/24/outline";
         </div>
       </form>
     </div>
-    <SharedLogo />
+    <MouiLogo />
   </div>
 </template>

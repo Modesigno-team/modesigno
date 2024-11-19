@@ -22,7 +22,7 @@
                     </small>
                   </div>
                   <span class="self-start">
-                    <SharedButton label="Top Up" is-secondary is-rounded />
+                    <MouiButton label="Top Up" is-secondary is-rounded />
                   </span>
                 </div>
               </div>

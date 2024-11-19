@@ -12,37 +12,37 @@
 
           <div class="max-w-7xl px-4 py-8 sm:px-6 lg:px-8 w-2/3">
             <div class="flex flex-col divide-y divide-dashed space-y-3">
-              <SharedToggleGroup :title="`promotions`"
+              <MouiToggleGroup :title="`promotions`"
                   :subtitle="`Be the first to learn about promotions, daily deals, and other
         exclusive items.`">
-                <SharedToggle
+                <MouiToggle
                   :title="`Email`"
                 />
-              </SharedToggleGroup>
-              <SharedToggleGroup :title="`Orders`"
+              </MouiToggleGroup>
+              <MouiToggleGroup :title="`Orders`"
                   :subtitle="`Get progress notification on all orders.`">
-                  <SharedToggle
+                  <MouiToggle
                   :title="`Sms`"
                 />
-                <SharedToggle
+                <MouiToggle
                   :title="`Email`"
                 />
-              </SharedToggleGroup>
-              <SharedToggleGroup :title="`Account`"
+              </MouiToggleGroup>
+              <MouiToggleGroup :title="`Account`"
                   :subtitle="`Get notified on all account activities.`">
-                <SharedToggle
+                <MouiToggle
                   :title="`Email`"
                 />
-              </SharedToggleGroup>
-              <SharedToggleGroup :title="`Rewards & Gifts`"
+              </MouiToggleGroup>
+              <MouiToggleGroup :title="`Rewards & Gifts`"
                   :subtitle="`Get notified on rewards and gifts.`">
-                  <SharedToggle
+                  <MouiToggle
                   :title="`Sms`"
                 />
-                <SharedToggle
+                <MouiToggle
                   :title="`Email`"
                 />
-              </SharedToggleGroup>
+              </MouiToggleGroup>
             </div>
           </div>
         </main>

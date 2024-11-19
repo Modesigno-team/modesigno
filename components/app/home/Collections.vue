@@ -14,9 +14,9 @@
           <button class="border border-black text-gray-700 px-5 py-5 rounded-md text-2xl sm:px-4 sm:py-2 sm:text-lg">
             Visit our collection
           </button>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900 flex items-center">
+          <NuxtLink to="/products" class="text-sm font-semibold leading-6 text-gray-900 flex items-center">
             <ChevronRightIcon />
-          </a>
+          </NuxtLink>
         </div>
       </div>
       <div class="grid grid-cols-2 gap-y-8 gap-x-8 sm:gap-x-16 mt-10 lg:mt-0">

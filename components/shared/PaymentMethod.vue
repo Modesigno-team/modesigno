@@ -145,7 +145,7 @@
         </div>
 
         <div class="mt-5 w-full sm:w-24">
-          <SharedButton is-secondary is-rounded />
+          <MouiButton is-secondary is-rounded />
         </div>
       </form>
     </div>

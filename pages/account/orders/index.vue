@@ -105,7 +105,7 @@
               </div>
               </template>
               
-              <SharedEmptyTab :title="`No ${selectedTab} order found.`" v-else/>
+              <MouiEmptyTab :title="`No ${selectedTab} order found.`" v-else/>
             </div>
           </div>
         </main>

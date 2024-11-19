@@ -12,7 +12,7 @@
         placeholder="Please enter your email address"
       />
       <button
-        class=" mx-5 sm:z-10 px-5 py-5 rounded-md text-2xl sm:px-4 sm:py-2 sm:text-lg sm:mx-0 bg-gray-800 text-white font-bold sm:absolute sm:right-0 sm:rounded-full hover:bg-gray-700 sm:w-48"
+        class="mx-5 px-5 py-5 rounded-md text-2xl sm:px-4 sm:py-2 sm:text-lg sm:mx-0 bg-gray-800 text-white font-bold sm:absolute sm:right-0 sm:rounded-full hover:bg-gray-700 sm:w-48"
       >
         Subscribe
       </button>

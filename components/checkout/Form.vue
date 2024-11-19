@@ -1,6 +1,6 @@
 <template>
   <form>
-    <div>
+    <div class="mt-10 sm:mt-0">
       <h2 class="text-lg font-medium text-gray-900">Contact information</h2>
 
       <div class="mt-4">
@@ -525,7 +525,7 @@
       class="fixed bottom-0 left-0 w-full bg-white border-t border-gray-200 p-4"
     >
       <div
-        class="flex items-center justify-between border-t border-gray-200 px-4 py-6 sm:px-6"
+        class="flex items-center justify-between px-4 py-6 sm:px-6"
       >
         <!-- Total -->
         <div class="flex flex-col items-start">

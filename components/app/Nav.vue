@@ -99,4 +99,9 @@ import {
   ShoppingCartIcon,
   UserIcon,
 } from "@heroicons/vue/24/solid";
+
+import { mapState } from 'pinia'
+import { useUserStore } from '../../store/user-store';
+
+
 </script>

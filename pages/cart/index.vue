@@ -135,7 +135,7 @@
               >
                 <span>Proceed to checkout</span>
                 <span
-                class="hidden text-sm font-semibold leading-6 h-8 w-8 text-gray-900 sm:flex items-center"
+                class="h-6 w-6 text-sm font-semibold leading-6 sm:h-8 sm:w-8 text-gray-900 sm:flex items-center"
               >
                 <ChevronRightIcon />
               </span>

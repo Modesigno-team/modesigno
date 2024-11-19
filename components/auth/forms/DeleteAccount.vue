@@ -15,7 +15,7 @@
 
     <form class="flex items-start md:col-span-2">
       <div class="mt-5 w-24">
-          <SharedButton is-danger is-rounded />
+          <MouiButton is-danger is-rounded />
         </div>
     </form>
   </div>

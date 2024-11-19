@@ -16,9 +16,9 @@
         supporting technology at large.
       </p>
       <div class="flex items-center gap-x-6 w-full sm:w-1/3">
-          <button class="w-2/3 border border-black text-gray-700 px-5 py-5 rounded-md text-2xl sm:px-4 sm:py-2 sm:text-lg">
+          <NuxtLink to="/products/3" class="w-2/3 border border-black text-gray-700 px-3 py-3 rounded-md text-2xl sm:px-5 sm:py-4 sm:text-lg text-center">
             Shop now
-          </button>
+          </NuxtLink>
         </div>
       <ul class="hidden sm:flex w-full ml-5 sm:justify-between sm:ml-1 text-gray-800 sm:w-96">
         <li class="list-disc">Free sign up</li>
